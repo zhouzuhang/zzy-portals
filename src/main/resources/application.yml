@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: zzy-portals
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/culpro?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useAffectedRows=true&zeroDateTimeBehavior=convertToNull&useOldAliasMetadataBehavior=true
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    name: culpro
+mybatis:
+  type-aliases-package: com.zzyportals.dataobject
+pagehelper:
+  helperDialect: mysql
+  offsetAsPageNum: true
+  rowBoundsWithCount: true
+  reasonable: false
+  supportMethodsArguments: true
+  returnPageInfo: true
+  params: count=countSql
+
+
